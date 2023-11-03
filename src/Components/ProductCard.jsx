@@ -44,12 +44,16 @@ const ProductCard = () => {
             <img src={Dot} alt="dot" />
             <p>12 left in Stock</p>
           </div>
-          <p>
+          <p className="d-none d-sm-block">
             Simply plug a Clarifion into any standard outlet and replace bulky,
             expensive air purifiers with a simple.
           </p>
         </div>
       </div>
+      <p className="d-block d-sm-none product_info_text">
+        Simply plug a Clarifion into any standard outlet and replace bulky,
+        expensive air purifiers with a simple.
+      </p>
       <div className="list_Div">
         <div className="list_wrapper">
           <img src={Tick} alt="list" />

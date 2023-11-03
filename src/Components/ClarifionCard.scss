@@ -1,10 +1,11 @@
 .clarifion_Card {
-    padding: 40px;
-    border-radius: 10px;
-    background: #FAFAFA;
-    border: none !important;
-    margin-top: 40px;
-    @media (max-width: 575px) {
-        padding: 12px;
-    }
+  padding: 40px;
+  border-radius: 10px;
+  background: #fafafa;
+  border: none !important;
+  margin-top: 40px;
+  @media (max-width: 575px) {
+    padding: 12px;
+    margin-top: 0;
+  }
 }
