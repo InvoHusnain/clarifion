@@ -12,7 +12,7 @@ const ClarifionCard = () => {
         <Row>
           <Col lg={6}>
             <div className="clarifion_imageCard_Wrapper">
-              <img src={Image} alt="image" />
+              <img src={Image} alt="image" className="w-100" />
             </div>
             <FeedbackCard />
           </Col>

@@ -15,6 +15,10 @@
         line-height: 100%;
         /* 48px */
         text-transform: capitalize;
+        @media (max-width: 575px) {
+            font-size: 32px;
+            text-align: center;
+          }
     }
 
     p {
@@ -28,6 +32,12 @@
         line-height: 100%;
         /* 24px */
         text-transform: capitalize;
+        @media (max-width: 575px) {
+            font-size: 16px;
+            text-align: center;
+            line-height: 22px;
+            padding: 5px;
+          }
     }
 }
 
@@ -137,4 +147,19 @@
             text-transform: capitalize;
         }
     }
+
+    .step_name span {
+        display: block;
+    }
+
+    @media (max-width: 575px) {
+        .step_Content {
+          flex-direction: column;
+          text-align: center;
+          height: 100px;
+        }
+        .step_name span{
+            display: none;
+        }
+      }
 }

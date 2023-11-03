@@ -15,25 +15,25 @@ const MainSection = () => {
           <div className="image_Wrapper">
             <img src={TickCircle} alt="tick" />
           </div>
-          <p>Step 1 : Cart Review</p>
+          <p className="step_name"><span>Step 1 : </span>Cart Review</p>
         </div>
         <div className="step_Content">
           <div className="image_Wrapper">
             <img src={TickCircle} alt="tick" />
           </div>
-          <p>Step 2 : Checkout</p>
+          <p className="step_name"><span>Step 2 : </span>Checkout</p>
         </div>
         <div className="step_Content">
           <div className="number_Wrapper_Current">
             <p>3</p>
           </div>
-          <p>Step 3 : Special Offer</p>
+          <p className="step_name"><span>Step 3 : </span>Special Offer</p>
         </div>
         <div className="step_Content">
           <div className="number_Wrapper_Next">
             <p>4</p>
           </div>
-          <p>Step 4 : Confirmation</p>
+          <p className="step_name"><span>Step 4 : </span>Confirmation</p>
         </div>
       </div>
     </Container>
