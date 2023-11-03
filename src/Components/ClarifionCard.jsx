@@ -15,13 +15,13 @@ const ClarifionCard = () => {
             extra Clarifion for only <span className="each">$14 each</span>{" "}
             ($84.00 total!)
           </h2>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={12} sm={12}>
             <div className="clarifion_imageCard_Wrapper">
               <img src={Image} alt="image" className="w-100" />
             </div>
             <FeedbackCard />
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={12} sm={12}>
             <ProductCard />
           </Col>
         </Row>

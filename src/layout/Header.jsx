@@ -13,24 +13,23 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Header.scss";
 
 const Header = () => {
-
   function NextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <img
-      src={NextIcon}
+        src={NextIcon}
         className={className}
         style={{ ...style }}
         onClick={onClick}
       />
     );
   }
-  
+
   function PrevArrow(props) {
     const { className, style, onClick } = props;
     return (
       <img
-      src={PrevIcon}
+        src={PrevIcon}
         className={className}
         style={{ ...style }}
         onClick={onClick}
@@ -39,7 +38,7 @@ const Header = () => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -48,20 +47,34 @@ const Header = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 650,
+        breakpoint: 1199,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
       },
       {
-        breakpoint: 575,
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="header_Wrapper">
