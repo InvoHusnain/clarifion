@@ -10,6 +10,11 @@ const ClarifionCard = () => {
     <Container>
       <Card className="clarifion_Card">
         <Row>
+          <h2 className="text-center d-sm-none d-block">
+            <span className="one_Time">ONE TIME ONLY</span> special price for 6
+            extra Clarifion for only <span className="each">$14 each</span>{" "}
+            ($84.00 total!)
+          </h2>
           <Col lg={6} md={6} sm={12}>
             <div className="clarifion_imageCard_Wrapper">
               <img src={Image} alt="image" className="w-100" />

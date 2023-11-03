@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./ProductCard.scss";
 import ProductImage from "../assets/image-removebg.svg";
 import Stars from "../assets/Stars.svg";
@@ -20,7 +19,7 @@ import Satisfaction from "../assets/satisfaction.svg";
 const ProductCard = () => {
   return (
     <div className="productCard_Wrapper">
-      <h2>
+      <h2 className=" d-sm-block d-none">
         <span className="one_Time">ONE TIME ONLY</span> special price for 6
         extra Clarifion for only <span className="each">$14 each</span> ($84.00
         total!)
@@ -76,7 +75,7 @@ const ProductCard = () => {
       </div>
       <div className="save_Wrapper">
         <div>
-        <img src={Save} alt="save" />
+          <img src={Save} alt="save" />
         </div>
         <p>
           Save <span>53%</span> and get <span>6 extra Clarifision</span> for
@@ -110,7 +109,11 @@ const ProductCard = () => {
         <p>No thanks, I don’t want this.</p>
       </div>
       <div className="satisfaction">
-        <img src={Satisfaction} className="satisfaction_img" alt="Satisfaction" />
+        <img
+          src={Satisfaction}
+          className="satisfaction_img"
+          alt="Satisfaction"
+        />
         <p>
           If you are not completely thrilled with your Clarifion - We have a{" "}
           <span>30 day satisfaction guarantee</span>. Please refer to our return
