@@ -75,7 +75,9 @@ const ProductCard = () => {
         </div>
       </div>
       <div className="save_Wrapper">
+        <div>
         <img src={Save} alt="save" />
+        </div>
         <p>
           Save <span>53%</span> and get <span>6 extra Clarifision</span> for
           only <span>$14 Each</span>.
@@ -93,6 +95,7 @@ const ProductCard = () => {
           <img src={Lock} alt="lock" />
           <p>Secure 256-bit SSL encryption.</p>
         </div>
+        <div className="horizontal_line" />
         <div className="images">
           <img src={Visa} alt="" />
           <img src={Shop} alt="" />
@@ -107,7 +110,7 @@ const ProductCard = () => {
         <p>No thanks, I don’t want this.</p>
       </div>
       <div className="satisfaction">
-        <img src={Satisfaction} alt="Satisfaction" />
+        <img src={Satisfaction} className="satisfaction_img" alt="Satisfaction" />
         <p>
           If you are not completely thrilled with your Clarifion - We have a{" "}
           <span>30 day satisfaction guarantee</span>. Please refer to our return
