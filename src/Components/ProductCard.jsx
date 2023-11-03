@@ -7,6 +7,15 @@ import Dot from "../assets/Dot.svg";
 import Tick from "../assets/tick-circle-one.svg";
 import Save from "../assets/save.svg";
 import Line from "../assets/line-btn.svg";
+import Lock from "../assets/lock-black.svg";
+import Visa from "../assets/visa.svg";
+import Shop from "../assets/shop-pay.svg";
+import PayPal from "../assets/paypal.svg";
+import Master from "../assets/mastercard.svg";
+import GPay from "../assets/gpay.svg";
+import Apple from "../assets/apple-pay.svg";
+import Amex from "../assets/amex.svg";
+import Satisfaction from "../assets/satisfaction.svg";
 
 const ProductCard = () => {
   return (
@@ -72,10 +81,34 @@ const ProductCard = () => {
         <Button>Yes - Claim my discount</Button>
         <img src={Line} alt="line" />
       </div>
-      <div>
-        <div>
-          <p></p>
+      <div className="payment_Wrapper">
+        <div className="shipping">
+          <p>Free shipping</p>
         </div>
+        <div className="secure">
+          <img src={Lock} alt="lock" />
+          <p>Secure 256-bit SSL encryption.</p>
+        </div>
+        <div className="images">
+          <img src={Visa} alt="" />
+          <img src={Shop} alt="" />
+          <img src={PayPal} alt="" />
+          <img src={Master} alt="" />
+          <img src={GPay} alt="" />
+          <img src={Apple} alt="" />
+          <img src={Amex} alt="" />
+        </div>
+      </div>
+      <div className="no_Thanks">
+        <p>No thanks, I don’t want this.</p>
+      </div>
+      <div className="satisfaction">
+        <img src={Satisfaction} alt="Satisfaction" />
+        <p>
+          If you are not completely thrilled with your Clarifion - We have a{" "}
+          <span>30 day satisfaction guarantee</span>. Please refer to our return
+          policy at the bottom of the page for more details. Happy Shopping!
+        </p>
       </div>
     </div>
   );
