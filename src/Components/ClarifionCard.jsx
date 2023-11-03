@@ -10,13 +10,13 @@ const ClarifionCard = () => {
     <Container>
       <Card className="clarifion_Card">
         <Row>
-          <Col lg={6}>
+          <Col lg={6} md={6} sm={12}>
             <div className="clarifion_imageCard_Wrapper">
               <img src={Image} alt="image" className="w-100" />
             </div>
             <FeedbackCard />
           </Col>
-          <Col lg={6}>
+          <Col lg={6} md={6} sm={12}>
             <ProductCard />
           </Col>
         </Row>
