@@ -1,0 +1,238 @@
+.productCard_Wrapper {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    h2 {
+        margin: 0;
+
+        .one_Time,
+        .each {
+            color: #2C7EF8;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Manrope;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            /* 44.8px */
+            text-transform: capitalize;
+        }
+
+        color: #000;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+
+    .product_Info {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        .product_Image_Wrapper {
+            background-color: #2C7EF8;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-direction: column !important;
+            gap: 15px !important;
+        }
+
+        .product_Name_Wrapper {
+            .product_Name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                p {
+                    color: #000;
+                    leading-trim: both;
+                    text-edge: cap;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                    /* 28px */
+                    text-transform: capitalize;
+                    margin: 0;
+                }
+
+                .product_Price {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        &:first-child {
+                            color: #969696;
+                            leading-trim: both;
+                            text-edge: cap;
+                            font-family: Manrope;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-decoration-line: strikethrough;
+                            text-transform: capitalize;
+                            margin: 0;
+                        }
+
+                        margin: 0;
+                        color: #2C7EF8;
+                        leading-trim: both;
+                        text-edge: cap;
+                        font-family: Manrope;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 140%;
+                        /* 30.8px */
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .stars_Wrapper {
+                img {
+                    width: 100px;
+                }
+            }
+
+            .stock_Wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 16px;
+                flex-wrap: wrap;
+
+                p {
+                    margin: 0;
+                    color: #37465A;
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+
+            p {
+                margin: 0;
+                color: #4D5254;
+                leading-trim: both;
+                text-edge: cap;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                /* 22.4px */
+            }
+        }
+    }
+
+    .list_Div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .list_wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
+
+            p {
+                margin: 0;
+                color: #4D5254;
+                leading-trim: both;
+                text-edge: cap;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%;
+
+                /* 25.6px */
+                span {
+                    color: #4D5254;
+                    leading-trim: both;
+                    text-edge: cap;
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+
+    .save_Wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        background: #EDF3FD;
+        padding: 12px 16px;
+        gap: 16px;
+
+        p {
+            margin: 0;
+            color: #000;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+
+            /* 22.4px */
+            span {
+                color: #2C7EF8;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .discount_Wrapper {
+        border-radius: 50px;
+        background: #59AE43;
+        padding: 16px 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            background-color: transparent !important;
+            border: none !important;
+            color: #FFF;
+            font-family: Manrope;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
